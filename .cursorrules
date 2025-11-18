@@ -47,8 +47,11 @@ When files are present in `00-Inbox/`, automatically process them without requir
    - For emails with attachments, move attachments (in folders) with the email to maintain relationship
 
 7. **Cleanup:**
-   - Delete original files from inbox after successful processing
-   - Only `README.md` should remain in the inbox folder
+   - **CRITICAL**: After moving/copying files to their destination, ALWAYS verify the file exists in the destination folder
+   - Verify the file was successfully copied by checking the destination path exists and contains the expected content
+   - **ONLY AFTER VERIFICATION**: Delete the original file from the inbox
+   - If verification fails, do NOT delete the original file - investigate and fix the issue first
+   - Only `README.md` should remain in the inbox folder after processing
 
 ## Naming Conventions
 
