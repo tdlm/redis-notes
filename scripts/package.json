@@ -1,0 +1,22 @@
+{
+  "name": "pdf-docx-to-markdown-converter",
+  "version": "1.0.0",
+  "description": "Convert PDF and DOCX files to Markdown format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdf",
+    "docx",
+    "markdown",
+    "converter"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mammoth": "^1.6.0",
+    "pdf-parse": "^1.1.1"
+  }
+}
+

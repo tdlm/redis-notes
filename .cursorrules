@@ -1,0 +1,113 @@
+# Notes Organization System Rules
+
+## Automatic Inbox Processing
+
+When files are present in `00-Inbox/`, automatically process them without requiring explicit user request.
+
+### Processing Workflow
+
+1. **PDF/DOCX Conversion:**
+   - PDF files → `node scripts/convert_pdf.js <file> --output-dir 00-Inbox/`
+   - DOCX files → `node scripts/convert_docx.js <file> --output-dir 00-Inbox/`
+   - PDF/DOCX files in attachment folders → Convert using same scripts with output-dir set to attachment folder
+   - Delete original files after successful conversion
+   - **IMPORTANT**: All PDF and DOCX files in attachment folders must be converted to Markdown. Only Markdown files should remain in attachment folders after processing.
+
+2. **Markdown Formatting:**
+   - Normalize spacing (consistent line breaks between sections)
+   - Ensure proper heading hierarchy
+   - Clean up excessive whitespace
+   - Fix common markdown formatting issues
+   - Improve list formatting consistency
+   - Add appropriate spacing around code blocks, tables, etc.
+
+3. **Content Detection:**
+   - Analyze files to determine appropriate destination based on keywords and content
+   - Check for keywords: "meeting", "email", "document", "project", "idea", "business", "personal", "person", "contact", "call", "discussion", "session", "sync", "message", "correspondence", "contract", "agreement", "letter", "statement", "task", "milestone", "concept", "brainstorm", "company", "corporate", "strategy", "career", "resume", "cv", "relationship"
+
+4. **File Routing:**
+   - Meeting notes (keywords: "meeting", "call", "discussion", "session", "sync") → `02-Meetings/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md`
+   - Email content (keywords: "email", "message", "correspondence") → `03-Emails/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md`
+   - Documents (keywords: "document", "contract", "agreement", "letter", "statement") → `04-Documents/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md`
+   - Project documentation (keywords: "project", "task", "milestone") → `06-Projects/` (or date-based `06-Projects/[YYYY]/[MM]/` if applicable)
+   - Ideas and concepts (keywords: "idea", "concept", "brainstorm") → `07-Ideas/`
+   - Business reference materials (keywords: "business", "company", "corporate", "strategy") → `08-Business/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md` (NOT meeting notes)
+   - Personal reference materials (keywords: "personal", "career", "resume", "cv") → `09-Personal/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md` (NOT meeting notes)
+   - People-related notes (keywords: "person", "contact", "relationship") → `05-People/` (reference materials only, NOT meeting notes)
+   - If destination is unclear: Prompt the user to clarify where the file should be placed
+
+5. **Date Extraction:**
+   - Extract dates from filenames, content, file metadata, or email headers
+   - Format dates as `YYYY-MM-DD` (ISO 8601)
+
+6. **File Organization:**
+   - Format dates as `YYYY-MM-DD` for meeting notes, emails, documents, business docs, and personal docs
+   - Organize into year/month folders: `[YYYY]/[MM]/` for all date-based destinations
+   - Rename files to follow naming conventions: `[YYYY]-[MM]-[DD]-[title].md` before moving
+   - For emails with attachments, move attachments (in folders) with the email to maintain relationship
+
+7. **Cleanup:**
+   - Delete original files from inbox after successful processing
+   - Only `README.md` should remain in the inbox folder
+
+## Naming Conventions
+
+### Meeting Notes
+- Format: `[YYYY]-[MM]-[DD]-[title].md`
+- Location: `02-Meetings/[YYYY]/[MM]/`
+- Examples: `2025-11-10-business-partner-meeting.md`, `2025-09-26-client-discussion.md`
+
+### Emails
+- Format: `[YYYY]-[MM]-[DD]-[title].md`
+- Location: `03-Emails/[YYYY]/[MM]/`
+
+### Documents
+- Format: `[YYYY]-[MM]-[DD]-[title].md`
+- Location: `04-Documents/[YYYY]/[MM]/`
+
+### Business Documents
+- Format: `[YYYY]-[MM]-[DD]-[title].md`
+- Location: `08-Business/[YYYY]/[MM]/`
+- **NOT meeting notes** - meeting notes go to `02-Meetings/`
+
+### Personal Documents
+- Format: `[YYYY]-[MM]-[DD]-[title].md`
+- Location: `09-Personal/[YYYY]/[MM]/`
+- **NOT meeting notes** - meeting notes go to `02-Meetings/`
+
+### General Rules
+- Date format: YYYY-MM-DD (ISO 8601)
+- Date comes first for chronological sorting
+- Title should be lowercase with hyphens separating words
+- Title should be descriptive but concise
+- No spaces in filenames (use hyphens instead)
+
+## Critical Organization Rules
+
+- **ALL meeting notes** (dated notes from meetings, discussions, sessions) → `02-Meetings/[YYYY]/[MM]/`
+- Business-related **meeting notes** → `02-Meetings/[YYYY]/[MM]/` (NOT `08-Business/`)
+- Business-related **information/docs** → `08-Business/[YYYY]/[MM]/` (reference materials only)
+- People-related **meeting notes** → `02-Meetings/[YYYY]/[MM]/` (NOT `05-People/`)
+- People-related **reference notes** → `05-People/` (reference materials only)
+- Personal **meeting notes** → `02-Meetings/[YYYY]/[MM]/`
+- Personal **reference docs** → `09-Personal/[YYYY]/[MM]/` (templates, plans, etc. without dates)
+
+## Date-Based Structure
+
+All sub-folders use `[YYYY]/[MM]/` structure when sorting files:
+- `02-Meetings/[YYYY]/[MM]/`
+- `03-Emails/[YYYY]/[MM]/`
+- `04-Documents/[YYYY]/[MM]/`
+- `08-Business/[YYYY]/[MM]/`
+- `09-Personal/[YYYY]/[MM]/`
+
+## Code Style Rules
+
+- Always use strict conditions (use === checks where possible)
+- Prefer early returns over deep nesting
+- Follow all naming conventions strictly
+- Extract dates from filenames, content, or metadata
+- Convert PDF/DOCX files to Markdown before processing
+- Route files based on content analysis and keywords
+- Organize date-based files into `[YYYY]/[MM]/` folder structure
+
