@@ -12,16 +12,16 @@ This is the single inbox for all files awaiting processing and organization. Fil
 
 **PDF files:**
 - Converted to Markdown using: `node scripts/convert_pdf.js <file> --output-dir 00-Inbox/`
-- Original PDF file is deleted after successful conversion
+- Original PDF file is deleted after successful conversion and verification
 
 **DOCX files:**
 - Converted to Markdown using: `node scripts/convert_docx.js <file> --output-dir 00-Inbox/`
-- Original DOCX file is deleted after successful conversion
+- Original DOCX file is deleted after successful conversion and verification
 
 **PDF/DOCX files in attachment folders:**
 - Converted to Markdown using the same scripts
 - Output directory set to the attachment folder
-- Original files are deleted after successful conversion
+- Original files are deleted after successful conversion and verification
 - **IMPORTANT**: Only Markdown files should remain in attachment folders after processing
 
 ### 2. Markdown Formatting
@@ -82,7 +82,8 @@ Dates are formatted as `YYYY-MM-DD` (ISO 8601) for all date-based destinations.
 
 ### 7. Cleanup
 
-- Original files are deleted from inbox after successful processing
+- Files are verified to be successfully copied into their appropriate destination folders
+- After verification, original files are deleted from inbox
 - Only `README.md` should remain in the inbox folder
 
 ## What Stays in Inbox
