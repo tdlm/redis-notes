@@ -54,4 +54,3 @@
 - Scott: Test rich text/markdown toggle functionality
 - Scott: Try Obsidian for enhanced note-taking workflow
 - Product team: Finalize Flex pricing calculator requirements this week
-

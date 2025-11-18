@@ -243,17 +243,43 @@ Use the following format for all action items:
 
 ---
 
-### Cody: Follow Up on Stalled Stripe Access Ticket
+### Stripe Access Request - ITHELP-7757
 
-- **Status:** Waiting
+- **Status:** In Progress
 
-- **Link:**
+- **Link:** ITHELP-7757
 
 - **Summary:**
 
-  Cody will follow up on stalled ticket for Stripe access for November timeline.
+  Request submitted to IT Help Desk for Stripe account access to support Redis University course payment integration. Ticket created November 18, 2025. Need direct developer support access from Stripe for implementation work.
 
 - **Notes:**
 
-  - From: 2025-11-10 Scott/Cody 1-on-1
-  - Working with Alex Weiss to resolve access issues
+  - **Context:** Redis University course payment setup project
+    - New revenue stream for online courses through Redis.io checkout
+    - FlockJay platform hosts courses but lacks payment solution
+    - User selects course → redirects to Redis.io payment page
+    - One-time payments only (no subscriptions)
+    - Global customer base: US, APAC, EMEA mix
+  - **Technical Requirements:**
+    - Direct developer support access from Stripe needed
+    - Solutions architect support requested for complex setup questions
+    - Stripe Checkout recommended for minimal implementation
+    - Customizable with Redis logo and colors
+    - Stripe Tax for automatic tax calculation
+    - Stripe Billing for invoice generation and compliance
+  - **Timeline:** Target completion by end of calendar year
+  - **Previous Attempts:**
+    - From: 2025-10-29 Redis <> Stripe meeting
+    - Marie-Emmanuelle Flute (Stripe) was checking if Neil's access could be temporarily swapped
+    - Alternative: manual rerouting of requests during project
+    - From: 2025-11-10 Scott/Cody 1-on-1 - Cody will follow up on stalled ticket for November timeline
+    - Working with Alex Weiss to resolve access issues
+  - **Current Status:**
+    - Access request submitted: November 18, 2025 (ITHELP-7757)
+    - IT ticket acknowledgment received: November 18, 2025
+    - Expected response within 24-48 hours
+  - **Related Work:**
+    - Product setup in Stripe still pending
+    - Technical questions about product pre-selection, user ID handling, webhook integration
+    - Design implementation in progress (Stripe hosted billing page with minimal customization)

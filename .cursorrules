@@ -111,3 +111,10 @@ All sub-folders use `[YYYY]/[MM]/` structure when sorting files:
 - Route files based on content analysis and keywords
 - Organize date-based files into `[YYYY]/[MM]/` folder structure
 
+## Meeting Notes Rules
+
+- **NEVER update meeting notes unless specifically requested by the user**
+- Meeting notes in `02-Meetings/` are historical records and should remain unchanged
+- Do not add updates, corrections, or additional information to meeting notes unless explicitly asked
+- If information needs to be updated, update `01-General/todos.md` or other appropriate documentation files instead
+
