@@ -88,4 +88,3 @@ We've compiled a list of misc/support requests we've identified/received recentl
 - Exploration of Databricks model for pdf to html automation
 
 Hope you have a great weekend! :palm_tree:
-
