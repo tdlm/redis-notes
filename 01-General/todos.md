@@ -22,6 +22,49 @@ Use the following format for all action items:
 
 ## Action Items from Past 5 Days
 
+### Implement Pricing Calculator Display Changes
+
+- **Status:** In progress
+
+- **Link:**
+
+- **Summary:**
+
+  Update pricing calculator and main pricing page to show actual hourly price when under minimum ($0.043/hr with "$200/month minimum" disclaimer instead of $0.274/hr). Remove QPF from main calculator view, keep in breakdown only. Rearrange field layout: move High Availability toggle next to Dataset field.
+
+- **Notes:**
+
+  - From: 2025-10-08 Redis.io Sizing Tool Updates
+  - Fundamental issue: Redis appears very expensive compared to ElastiCache and Memorystore
+  - Update main pricing page "from" pricing to align with calculator
+  - Default QPF to 1 for simplified user experience
+  - Yoav to provide written brief via Google Doc
+
+---
+
+### Continue Builder IO Migration Work
+
+- **Status:** In progress
+
+- **Link:**
+
+- **Summary:**
+
+  Continue migration from Builder IO to production environment. One-by-one migration approach for safety. Add LLM-generated metadata for SEO (phase two). Script provided 90% automation success.
+
+- **Notes:**
+
+  - From: 2025-10-07 Scott/Cody 1-on-1
+  - From: 2025-10-14 Web Team Weekly - Migration work paused, resuming
+  - Images location proving challenging despite Cursor AI assistance
+  - Code samples and content structure looking good
+  - Authors extraction will be next phase
+  - Mass link updates needed, though existing redirects should help
+  - URL structure: keeping existing learn/* paths, pointing wildcard to new system
+  - Will extract components for different fields carefully
+
+---
+
 ### Delete Duplicate Cheat Sheet Pages & Implement Tabbed Interface
 
 - **Status:** Done
@@ -191,6 +234,7 @@ Use the following format for all action items:
   - From: 2025-11-18 Scott/Cody 1-on-1
   - Pricing calculator updates coming "hot" this week
   - Preference for minimal impact on existing business logic
+  - From: 2025-11-19 Company Quarterly Meeting - Redis Flex now GA on Redis Cloud Pro (up to 75% lower cost per gig)
 
 ---
 
@@ -283,3 +327,5 @@ Use the following format for all action items:
     - Product setup in Stripe still pending
     - Technical questions about product pre-selection, user ID handling, webhook integration
     - Design implementation in progress (Stripe hosted billing page with minimal customization)
+    - From: 2025-10-03 Stripe Web Flow Design Sync - Found Stripe's packaged checkout flow documentation (pre-built solution reduces custom development needs)
+    - From: 2025-10-09 Stripe Access Product Set Up - Architecture: FlockJay → Redis.io → Cloud billing API → Orb (pricing) → Stripe checkout. Two options: cloud billing generates checkout links (recommended) or embedded Stripe checkout on Redis.io. Test card: 4242 4242 4242 4242, 10/26, 123. Two Stripe instances needed: Global (Redis Inc) and Israel (Redis Ltd)
