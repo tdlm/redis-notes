@@ -60,7 +60,7 @@ Use the following format for all action items:
   - Code samples and content structure looking good
   - Authors extraction will be next phase
   - Mass link updates needed, though existing redirects should help
-  - URL structure: keeping existing learn/* paths, pointing wildcard to new system
+  - URL structure: keeping existing learn/\* paths, pointing wildcard to new system
   - Will extract components for different fields carefully
 
 ---
@@ -289,7 +289,7 @@ Use the following format for all action items:
 
 ### Stripe Access Request - ITHELP-7757
 
-- **Status:** In Progress
+- **Status:** Done
 
 - **Link:** ITHELP-7757
 
@@ -322,7 +322,7 @@ Use the following format for all action items:
   - **Current Status:**
     - Access request submitted: November 18, 2025 (ITHELP-7757)
     - IT ticket acknowledgment received: November 18, 2025
-    - Expected response within 24-48 hours
+    - **Access granted via Okta** - After extensive back and forth, access successfully obtained through Okta integration on November 19, 2025 at approximately 4:30pm PT
   - **Related Work:**
     - Product setup in Stripe still pending
     - Technical questions about product pre-selection, user ID handling, webhook integration
