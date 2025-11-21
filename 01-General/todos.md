@@ -105,7 +105,7 @@ Use the following format for all action items:
 
 ### Test Rich Text/Markdown Toggle Functionality
 
-- **Status:** In progress
+- **Status:** Done
 
 - **Link:**
 
@@ -116,6 +116,8 @@ Use the following format for all action items:
 - **Notes:**
 
   - From: 2025-11-18 Scott/Cody 1-on-1
+  - Tested on 2025-11-21: Toggle works as expected
+  - Minor styling/spacing issues identified but functionality is solid
 
 ---
 
