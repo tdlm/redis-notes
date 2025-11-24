@@ -22,6 +22,40 @@ Use the following format for all action items:
 
 ## Action Items from Past 5 Days
 
+### Stripe Integration for Redis University Course Payments
+
+- **Status:** In progress
+
+- **Link:**
+
+- **Summary:**
+
+  Implement Stripe integration for Redis University course payment flow. FlockJay hosts courses but lacks payment solution - users select course and redirect to Redis.io payment page for one-time payments. Access granted via Okta on November 19, 2025.
+
+- **Notes:**
+
+  - From: 2025-10-29 Redis <> Stripe meeting
+  - From: 2025-11-10 Scott/Cody 1-on-1
+  - **Access Status:** ✅ Granted via Okta on Nov 19, 2025 (ITHELP-7757)
+  - **Next Steps:**
+    - Follow up with Sallie to set up products in Stripe
+    - Reach out to Stripe support for guidance on simple integration steps
+    - Once products are set up, create test page
+  - **Architecture:** FlockJay → Redis.io → Cloud billing API → Orb (pricing) → Stripe checkout
+  - **Technical Requirements:**
+    - Stripe Checkout for minimal implementation (customizable with Redis branding)
+    - Stripe Tax for automatic tax calculation
+    - Stripe Billing for invoice generation and compliance
+    - Two Stripe instances needed: Global (Redis Inc) and Israel (Redis Ltd)
+  - **Outstanding Technical Questions:**
+    - Product pre-selection handling
+    - User ID handling and passing
+    - Webhook integration setup
+  - **Timeline:** Target completion by end of calendar year
+  - **Test Card:** 4242 4242 4242 4242, 10/26, 123
+
+---
+
 ### Implement Pricing Calculator Display Changes
 
 - **Status:** In progress
@@ -42,7 +76,7 @@ Use the following format for all action items:
 
 ---
 
-### Continue Builder IO Migration Work
+### Tutorial Migration from Builder.io to Production
 
 - **Status:** In progress
 
@@ -50,18 +84,30 @@ Use the following format for all action items:
 
 - **Summary:**
 
-  Continue migration from Builder IO to production environment. One-by-one migration approach for safety. Add LLM-generated metadata for SEO (phase two). Script provided 90% automation success.
+  Migrate tutorials from Builder.io to production environment. One-by-one migration approach for safety. Migration is mostly functional with search, categories, and content working. Redirects (~300) are one of the last steps before going live.
 
 - **Notes:**
 
   - From: 2025-10-07 Scott/Cody 1-on-1
   - From: 2025-10-14 Web Team Weekly - Migration work paused, resuming
-  - Images location proving challenging despite Cursor AI assistance
-  - Code samples and content structure looking good
-  - Authors extraction will be next phase
-  - Mass link updates needed, though existing redirects should help
+  - From: 2025-11-18 Scott/Cody 1-on-1 - Significant progress, mostly functional
+  - **Completed:**
+    - Search functionality (currently title-only, plans for TanStack Query)
+    - Category system working (AI category auto-tags content)
+    - Duplicate cheat sheet pages deleted, tabbed interface implemented
+    - Rich text/markdown toggle tested and working (minor styling issues)
+    - Code samples and content structure looking good
+  - **In Progress:**
+    - Images location proving challenging
+    - Authors extraction (next phase)
+    - Mass link updates needed throughout content
+    - Content grouping/navigation improvements needed
+  - **Remaining for Go-Live:**
+    - Surface and plan all ~300 redirects required for migration
+    - Implement redirects in config file (considering move from Cloudflare to Vercel-only)
+    - Internal link updates throughout content
   - URL structure: keeping existing learn/\* paths, pointing wildcard to new system
-  - Will extract components for different fields carefully
+  - Add LLM-generated metadata for SEO (phase two)
 
 ---
 
@@ -80,26 +126,6 @@ Use the following format for all action items:
   - From: 2025-11-18 Scott/Cody 1-on-1
   - Major issue resolved: duplicate cheat sheet pages identified
   - Solution: delete duplicates, keep main cheat sheet page with all tabs
-
----
-
-### Surface and Plan All ~300 Redirects for Tutorial Migration
-
-- **Status:** In progress
-
-- **Link:**
-
-- **Summary:**
-
-  Need to surface and plan all approximately 300 redirects required for tutorial migration. Internal link updates needed throughout content.
-
-- **Notes:**
-
-  - From: 2025-11-18 Scott/Cody 1-on-1
-  - Blockers identified: ~300 redirects required for migration
-  - Content grouping/navigation improvements needed
-  - Redirect strategy: considering moving from Cloudflare to Vercel-only setup
-  - Decision to implement redirects in config file for efficiency
 
 ---
 
@@ -286,48 +312,3 @@ Use the following format for all action items:
 
   - From: 2025-11-06 Dev Center Tutorials Design
   - Need to test before building automated GitHub repo syncing
-
----
-
-### Stripe Access Request - ITHELP-7757
-
-- **Status:** Done
-
-- **Link:** ITHELP-7757
-
-- **Summary:**
-
-  Request submitted to IT Help Desk for Stripe account access to support Redis University course payment integration. Ticket created November 18, 2025. Need direct developer support access from Stripe for implementation work.
-
-- **Notes:**
-
-  - **Context:** Redis University course payment setup project
-    - New revenue stream for online courses through Redis.io checkout
-    - FlockJay platform hosts courses but lacks payment solution
-    - User selects course → redirects to Redis.io payment page
-    - One-time payments only (no subscriptions)
-    - Global customer base: US, APAC, EMEA mix
-  - **Technical Requirements:**
-    - Direct developer support access from Stripe needed
-    - Solutions architect support requested for complex setup questions
-    - Stripe Checkout recommended for minimal implementation
-    - Customizable with Redis logo and colors
-    - Stripe Tax for automatic tax calculation
-    - Stripe Billing for invoice generation and compliance
-  - **Timeline:** Target completion by end of calendar year
-  - **Previous Attempts:**
-    - From: 2025-10-29 Redis <> Stripe meeting
-    - Marie-Emmanuelle Flute (Stripe) was checking if Neil's access could be temporarily swapped
-    - Alternative: manual rerouting of requests during project
-    - From: 2025-11-10 Scott/Cody 1-on-1 - Cody will follow up on stalled ticket for November timeline
-    - Working with Alex Weiss to resolve access issues
-  - **Current Status:**
-    - Access request submitted: November 18, 2025 (ITHELP-7757)
-    - IT ticket acknowledgment received: November 18, 2025
-    - **Access granted via Okta** - After extensive back and forth, access successfully obtained through Okta integration on November 19, 2025 at approximately 4:30pm PT
-  - **Related Work:**
-    - Product setup in Stripe still pending
-    - Technical questions about product pre-selection, user ID handling, webhook integration
-    - Design implementation in progress (Stripe hosted billing page with minimal customization)
-    - From: 2025-10-03 Stripe Web Flow Design Sync - Found Stripe's packaged checkout flow documentation (pre-built solution reduces custom development needs)
-    - From: 2025-10-09 Stripe Access Product Set Up - Architecture: FlockJay → Redis.io → Cloud billing API → Orb (pricing) → Stripe checkout. Two options: cloud billing generates checkout links (recommended) or embedded Stripe checkout on Redis.io. Test card: 4242 4242 4242 4242, 10/26, 123. Two Stripe instances needed: Global (Redis Inc) and Israel (Redis Ltd)
