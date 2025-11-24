@@ -103,7 +103,7 @@ Use the following format for all action items:
     - Mass link updates needed throughout content
     - Content grouping/navigation improvements needed
   - **Remaining for Go-Live:**
-    - Surface and plan all ~300 redirects required for migration
+    - ✅ Surface and plan all ~300 redirects required for migration (completed)
     - Implement redirects in config file (considering move from Cloudflare to Vercel-only)
     - Internal link updates throughout content
   - URL structure: keeping existing learn/\* paths, pointing wildcard to new system
@@ -126,6 +126,7 @@ Use the following format for all action items:
   - From: 2025-11-18 Scott/Cody 1-on-1
   - Major issue resolved: duplicate cheat sheet pages identified
   - Solution: delete duplicates, keep main cheat sheet page with all tabs
+  - ✅ Completed: Duplicate pages deleted
 
 ---
 
