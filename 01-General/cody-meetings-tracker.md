@@ -24,8 +24,8 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 - **From:** 2025-11-18
 - **Summary:** Builder IO created separate pages for each tab interface. Delete duplicates, keep main cheat sheet page with all tabs, and implement tabbed interface in new system.
 - **Notes:**
-  - Duplicate pages deleted
-  - Tabbed interface implementation status: In progress
+  - Duplicate cheat sheet pages deleted
+  - May find other duplicates during page-by-page testing, will delete as discovered
 
 #### Surface and Plan All ~300 Redirects for Tutorial Migration
 
@@ -53,7 +53,7 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 - **From:** 2025-11-18
 - **Summary:** Cody suggested Obsidian for note management. Supports React plugins, markdown-based, integrates well with AI tools.
 - **Notes:**
-  - Tool recommendation for enhanced note-taking workflow
+  - Haven't tried yet, but will
 
 #### Share WordPress Traffic Analysis with Kelsey
 
@@ -174,9 +174,10 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 ### Redirect Strategy
 
 - **Status:** Decision Made
-- **Latest Update:** 2025-11-18
-- **Decision:** Implement redirects in config file for efficiency
+- **Latest Update:** Recent
+- **Decision:** Implement redirects using next.config
 - **Notes:**
+  - Will use next.config for redirect implementation
   - Considering moving from Cloudflare to Vercel-only setup
   - Vercel CEO suggested Cloudflare slowing site performance
 
@@ -234,11 +235,22 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 - **From:** 2025-11-18
 - **Summary:** Finished using slugs instead of names for filtering categories on the Tutorials Search page for cleaner URLs.
 
+### ✅ Fix LangCache Calculator Bug
+
+- **Completed:** Recent
+- **Summary:** Solved LangCache Calculator bug where null values were being passed, causing "Email results" functionality to fail for some users (particularly in Chrome with ad blockers).
+- **Notes:**
+  - Issue was browser-specific, worked in Safari but failed in Chrome
+  - Suspected Chrome ad blockers were interfering
+  - Fixed and tested successfully
+  - Reported by Keith Nyberg, tested by Katie Dunn and others
+
 ---
 
 ## Notes
 
 - Cody suggested Obsidian for note management (2025-11-18)
 - Tool supports React plugins, markdown-based, integrates well with AI tools
+- Haven't tried Obsidian yet but will
 - Both using Granola tool extensively for meeting productivity (2025-09-29)
 - Future hiring: Engineering manager/conversion rate optimization specialist (2025-10-07)
