@@ -108,6 +108,7 @@ Use the following format for all action items:
     - Move redirects to next.config to surface them on Vercel
     - Comb through existing tutorials to make sure they're all well-formatted
     - Internal link updates throughout content
+    - Related items navigation in the left sidebar for related tutorials
   - URL structure: keeping existing learn/\* paths, pointing wildcard to new system
   - Add LLM-generated metadata for SEO (phase two)
 
