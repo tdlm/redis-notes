@@ -25,6 +25,9 @@ Igal Perelman reviewed the pricing calculator and found some issues that don't w
   - Indicate the GB size right next to Pro in the subscription column (like we do with Essentials)
   - Or add the GB size right next to the RBU in brackets
 - **Status:** ✅ Done
+- **Follow-up Thread:**
+  - Igal Perelman (Nov 23, 5:43 AM): Still not seeing storage level on Pro - Essentials shows size, Pro does not
+  - Scott Weaver (Nov 24): Since Pro has a shared cell for all items (to indicate all items are included in Pro rather than individually billed items), added a Dataset column to the results that indicates which plan corresponds to which line
 
 ### 3. Calculator Input - 0.25 GB Display Issue
 
