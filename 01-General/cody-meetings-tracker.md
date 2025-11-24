@@ -29,11 +29,13 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 
 #### Surface and Plan All ~300 Redirects for Tutorial Migration
 
-- **Status:** ✅ Done (Planning Complete)
+- **Status:** In progress
 - **From:** 2025-11-18
 - **Summary:** Surface and plan all ~300 redirects required for tutorial migration.
 - **Notes:**
-  - Redirects have been surfaced and planned
+  - ✅ Full set of redirects generated
+  - ⏳ Still need to manually verify each redirect belongs there
+  - ⏳ Need redirect destination for items that won't make the migration (will ask Cody)
   - Next step: Implement redirects in config file (considering move from Cloudflare to Vercel-only)
 
 #### Test Rich Text/Markdown Toggle Functionality
@@ -117,6 +119,14 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 - **Notes:**
   - Concerns about displaying actual hourly price vs minimum price
 
+### Cody: Provide Redirect Destination for Items Not Making Migration
+
+- **Status:** Waiting
+- **From:** Recent
+- **Summary:** Need redirect destination URL/path for tutorial items that won't make the migration.
+- **Notes:**
+  - Required to complete redirect verification and implementation
+
 ---
 
 ## Key Topics & Decisions
@@ -128,6 +138,7 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 - **Progress:**
   - Search functionality implemented (title-only, plans for TanStack Query)
   - Category system working (AI category auto-tags content)
+  - ✅ Using slugs instead of names for filtering categories on Tutorials Search (completed)
   - Duplicate cheat sheet pages deleted
   - Rich text/markdown toggle tested and working
   - Code samples and content structure looking good
@@ -136,7 +147,9 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
   - Authors extraction (next phase)
   - Mass link updates needed throughout content
   - Content grouping/navigation improvements needed
-  - Implement ~300 redirects in config file
+  - ⏳ Verify all ~300 redirects manually (full set generated, verification in progress)
+  - ⏳ Get redirect destination from Cody for items not making migration
+  - Implement verified redirects in config file
   - Internal link updates throughout content
 - **URL Structure:** Keeping existing learn/\* paths, pointing wildcard to new system
 
@@ -196,10 +209,14 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 - **Completed:** 2025-11-18
 - **From:** 2025-11-18
 
-### ✅ Surface and Plan All ~300 Redirects
+### ✅ Generate Full Set of ~300 Redirects
 
-- **Completed:** Planning phase complete
+- **Completed:** Recent
 - **From:** 2025-11-18
+- **Summary:** Generated the complete set of redirects for tutorial migration.
+- **Notes:**
+  - Manual verification of each redirect still in progress
+  - Need redirect destination for items not making migration
 
 ### ✅ Test Rich Text/Markdown Toggle Functionality
 
@@ -210,6 +227,12 @@ Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody 
 
 - **Completed:** 2025-10-14
 - **From:** 2025-10-14
+
+### ✅ Implement Slugs for Tutorial Search Filter Categories
+
+- **Completed:** Recent
+- **From:** 2025-11-18
+- **Summary:** Finished using slugs instead of names for filtering categories on the Tutorials Search page for cleaner URLs.
 
 ---
 
