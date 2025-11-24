@@ -58,7 +58,7 @@ Use the following format for all action items:
 
 ### Implement Pricing Calculator Display Changes
 
-- **Status:** In progress
+- **Status:** Done
 
 - **Link:**
 
@@ -72,7 +72,7 @@ Use the following format for all action items:
   - Fundamental issue: Redis appears very expensive compared to ElastiCache and Memorystore
   - Update main pricing page "from" pricing to align with calculator
   - Default QPF to 1 for simplified user experience
-  - Yoav to provide written brief via Google Doc
+  - ✅ Completed: All display changes implemented
 
 ---
 
@@ -167,7 +167,7 @@ Use the following format for all action items:
 
 ### Update Sanity Schema with New Filter Fields, Implement Basic Filtering
 
-- **Status:** In progress
+- **Status:** Deferred
 
 - **Link:**
 
@@ -179,7 +179,7 @@ Use the following format for all action items:
 
   - From: 2025-11-06 Dev Center Tutorials Design
   - Phase 1: Update existing tutorial schema with new filter categories
-  - Target: End of calendar year completion
+  - **Status Update:** Deferred until Q1 2026
   - Start small: add few GitHub demo cards with basic filtering
   - Will needs to provide complete list of tags, languages, integrations from portfolio architecture
 
