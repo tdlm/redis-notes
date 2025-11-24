@@ -103,8 +103,10 @@ Use the following format for all action items:
     - Mass link updates needed throughout content
     - Content grouping/navigation improvements needed
   - **Remaining for Go-Live:**
-    - ✅ Surface and plan all ~300 redirects required for migration (completed)
-    - Implement redirects in config file (considering move from Cloudflare to Vercel-only)
+    - ✅ Plan all ~300 redirects required for migration (completed)
+    - Determine fallback destination for sources that will have no destination
+    - Move redirects to next.config to surface them on Vercel
+    - Comb through existing tutorials to make sure they're all well-formatted
     - Internal link updates throughout content
   - URL structure: keeping existing learn/\* paths, pointing wildcard to new system
   - Add LLM-generated metadata for SEO (phase two)
