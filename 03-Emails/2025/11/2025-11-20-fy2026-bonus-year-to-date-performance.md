@@ -1,3 +1,12 @@
+---
+type: email
+title: FY2026 Bonus -- Year-to-Date Performance
+date: 2025-11-20
+from: zoe.werner@redis.com
+to: company-wide
+tags: [bonus, compensation, hr, quarterly]
+---
+
 # FY2026 Bonus -- Year-to-Date Performance
 
 **Date:** November 20, 2025  
@@ -26,9 +35,9 @@ Our bonus plan pays out based on year-to-date (YTD) company performance, which m
 
 - **Q1:** We were at 100% YTD, so bonuses were paid at 100% of target.
 - **Q2:** YTD performance dropped to 80%, so both Q1 and Q2 were trued up to that level. Most people received 60% of their Q2 target after applying that true-up.
-- **Q3:** YTD performance is now 72%, down from 80% last quarter. As a result, most Q3 payouts will be 56%* of the quarterly target.
+- **Q3:** YTD performance is now 72%, down from 80% last quarter. As a result, most Q3 payouts will be 56%\* of the quarterly target.
 
-*Actual payout % may vary based on start date or mid-year bonus target changes.
+\*Actual payout % may vary based on start date or mid-year bonus target changes.
 
 ## Timing of Q3 Payouts
 
@@ -45,6 +54,3 @@ Zoë
 **Zoë Werner**  
 VP, Total Rewards & HR Operations  
 New York, USA
-
-
-

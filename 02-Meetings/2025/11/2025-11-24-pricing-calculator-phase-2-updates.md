@@ -1,3 +1,12 @@
+---
+type: meeting
+title: Pricing Calculator - Phase 2 Updates
+date: 2025-11-24
+participants: [Scott Weaver, Igal Perelman, Cody Henshaw, Yoav Haresh]
+source: Slack
+tags: [pricing, calculator, redis-cloud]
+---
+
 # Pricing Calculator - Phase 2 Updates
 
 **Date:** November 24, 2025  

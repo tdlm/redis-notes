@@ -1,3 +1,11 @@
+---
+type: meeting
+title: WM/Redis Quick Check-in
+date: 2025-11-19
+participants: [Kelsey Szukhent, Scott Adrian, Sam, Alannah, Mac McDonald, Cody Henshaw, Bonny, Regine Carreras]
+tags: [woolly-mammoth, resource-center, sanity, webinars]
+---
+
 # WM/Redis Quick Check-in
 
 Wed, 19 Nov 25 · kelsey.szukhent@redis.com, scott.adrian@redis.com, sam@mammoth.tech, alannah@mammoth.tech, mac.mcdonald@redis.com, cody.henshaw@redis.com, bonny@mammoth.tech, regine.carreras@redis.com

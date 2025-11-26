@@ -1,3 +1,12 @@
+---
+type: email
+title: ITHELP-7757 Stripe Access
+date: 2025-11-18
+from: jira@redislabs.atlassian.net
+to: scott.weaver@redis.com
+tags: [stripe, it, jira, access-request]
+---
+
 # ITHELP-7757 Stripe Access
 
 **Date:** November 18, 2025  

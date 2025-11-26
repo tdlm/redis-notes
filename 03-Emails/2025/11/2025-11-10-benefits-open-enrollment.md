@@ -1,3 +1,12 @@
+---
+type: email
+title: Benefits Open Enrollment is Live!
+date: 2025-11-10
+from: usbenefits@redis.com
+to: scott.weaver@redis.com
+tags: [benefits, hr, open-enrollment, 2026]
+---
+
 # Benefits Open Enrollment is Live!
 
 **From:** Redis US Benefits <usbenefits@redis.com>  

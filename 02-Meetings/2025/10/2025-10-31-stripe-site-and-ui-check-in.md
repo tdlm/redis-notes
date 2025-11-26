@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Stripe Site and UI Check-in
+date: 2025-10-31
+participants: [Sallie Gamboa, Mac McDonald, Scott Weaver, Kelsey Szukhent]
+tags: [stripe, design, checkout, flockj]
+---
+
 # Stripe Site and UI Check-in
 
 **Date:** October 31, 2025  

@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Web Team Weekly
+date: 2025-10-14
+participants: [Scott Adrian, Cody Henshaw]
+tags: [web-team, weekly, deployments, billing, migration]
+---
+
 # Web Team Weekly
 
 **Date:** Tuesday, October 14, 2025

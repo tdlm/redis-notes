@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Woolly Mammoth and Redis Quick Check-in
+date: 2025-11-05
+participants: [Kelsey Szukhent, Scott Adrian, Sam, Alannah, Mac McDonald, Cody Henshaw, Bonny, Laura Giannola]
+tags: [woolly-mammoth, resource-center, events, splash]
+---
+
 # Woolly Mammoth and Redis Quick Check-in
 
 **Date:** November 5, 2025  

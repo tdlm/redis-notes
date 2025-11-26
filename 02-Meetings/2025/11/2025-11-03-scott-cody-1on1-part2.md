@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Scott and Cody 1-on-1 (Part 2)
+date: 2025-11-03
+participants: [Scott Weaver, Cody Henshaw]
+tags: [1-on-1, workflow, task-management, tools]
+---
+
 # Scott and Cody 1-on-1 (Part 2)
 
 **Date:** November 3, 2025  

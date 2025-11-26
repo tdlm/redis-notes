@@ -1,3 +1,9 @@
+---
+type: tracker
+title: Cody Meetings Tracker
+tags: [1-on-1, cody-henshaw, action-items, meetings]
+---
+
 # Cody Meetings Tracker
 
 Tracking action items, decisions, and key topics from 1-on-1 meetings with Cody Henshaw (cody.henshaw@redis.com).

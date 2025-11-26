@@ -1,3 +1,13 @@
+---
+type: email
+title: LangCache Calculator Blank Email Issue
+date: 2025-11-10
+from: keith.nyberg@redis.com
+to: scott.weaver@redis.com
+source: Slack
+tags: [langcache, calculator, bug, chrome]
+---
+
 # LangCache Calculator Blank Email Issue
 
 ## Monday, November 10, 2025
@@ -6,6 +16,7 @@
 hey y'all - seems we are having issues with the langcache calculator passing null values again... :disappointed: sorry this is annoying but hoping we can get some support. happy to file a bug ticket too.
 
 2 files
+
 - Screenshot 2025-11-10 at 10.41.46.png
 - Screenshot 2025-11-10 at 10.42.39.png
 
@@ -41,6 +52,7 @@ not that im aware of but maybe hidden in chrome somewhere?
 
 **Keith Nyberg** - 11:08 AM
 confirming other users are having this issue as well.
+
 - Screenshot 2025-11-10 at 11.08.28.png
 
 **Scott Weaver** - 11:09 AM
@@ -78,6 +90,3 @@ Now looking into adding more debugging
 
 **Keith Nyberg** - 10:26 AM
 that worked for me
-
-
-

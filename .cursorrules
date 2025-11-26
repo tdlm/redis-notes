@@ -7,6 +7,7 @@ When files are present in `00-Inbox/`, automatically process them without requir
 ### Processing Workflow
 
 1. **PDF/DOCX Conversion:**
+
    - PDF files → `node scripts/convert_pdf.js <file> --output-dir 00-Inbox/`
    - DOCX files → `node scripts/convert_docx.js <file> --output-dir 00-Inbox/`
    - PDF/DOCX files in attachment folders → Convert using same scripts with output-dir set to attachment folder
@@ -14,6 +15,7 @@ When files are present in `00-Inbox/`, automatically process them without requir
    - **IMPORTANT**: All PDF and DOCX files in attachment folders must be converted to Markdown. Only Markdown files should remain in attachment folders after processing.
 
 2. **Markdown Formatting:**
+
    - Normalize spacing (consistent line breaks between sections)
    - Ensure proper heading hierarchy
    - Clean up excessive whitespace
@@ -22,10 +24,12 @@ When files are present in `00-Inbox/`, automatically process them without requir
    - Add appropriate spacing around code blocks, tables, etc.
 
 3. **Content Detection:**
+
    - Analyze files to determine appropriate destination based on keywords and content
    - Check for keywords: "meeting", "email", "document", "project", "idea", "business", "personal", "person", "contact", "call", "discussion", "session", "sync", "message", "correspondence", "contract", "agreement", "letter", "statement", "task", "milestone", "concept", "brainstorm", "company", "corporate", "strategy", "career", "resume", "cv", "relationship"
 
 4. **File Routing:**
+
    - Meeting notes (keywords: "meeting", "call", "discussion", "session", "sync") → `02-Meetings/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md`
    - Email content (keywords: "email", "message", "correspondence") → `03-Emails/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md`
    - Documents (keywords: "document", "contract", "agreement", "letter", "statement") → `04-Documents/[YYYY]/[MM]/` with naming: `[YYYY]-[MM]-[DD]-[title].md`
@@ -37,10 +41,12 @@ When files are present in `00-Inbox/`, automatically process them without requir
    - If destination is unclear: Prompt the user to clarify where the file should be placed
 
 5. **Date Extraction:**
+
    - Extract dates from filenames, content, file metadata, or email headers
    - Format dates as `YYYY-MM-DD` (ISO 8601)
 
 6. **File Organization:**
+
    - Format dates as `YYYY-MM-DD` for meeting notes, emails, documents, business docs, and personal docs
    - Organize into year/month folders: `[YYYY]/[MM]/` for all date-based destinations
    - Rename files to follow naming conventions: `[YYYY]-[MM]-[DD]-[title].md` before moving
@@ -56,29 +62,35 @@ When files are present in `00-Inbox/`, automatically process them without requir
 ## Naming Conventions
 
 ### Meeting Notes
+
 - Format: `[YYYY]-[MM]-[DD]-[title].md`
 - Location: `02-Meetings/[YYYY]/[MM]/`
 - Examples: `2025-11-10-business-partner-meeting.md`, `2025-09-26-client-discussion.md`
 
 ### Emails
+
 - Format: `[YYYY]-[MM]-[DD]-[title].md`
 - Location: `03-Emails/[YYYY]/[MM]/`
 
 ### Documents
+
 - Format: `[YYYY]-[MM]-[DD]-[title].md`
 - Location: `04-Documents/[YYYY]/[MM]/`
 
 ### Business Documents
+
 - Format: `[YYYY]-[MM]-[DD]-[title].md`
 - Location: `08-Business/[YYYY]/[MM]/`
 - **NOT meeting notes** - meeting notes go to `02-Meetings/`
 
 ### Personal Documents
+
 - Format: `[YYYY]-[MM]-[DD]-[title].md`
 - Location: `09-Personal/[YYYY]/[MM]/`
 - **NOT meeting notes** - meeting notes go to `02-Meetings/`
 
 ### General Rules
+
 - Date format: YYYY-MM-DD (ISO 8601)
 - Date comes first for chronological sorting
 - Title should be lowercase with hyphens separating words
@@ -98,6 +110,7 @@ When files are present in `00-Inbox/`, automatically process them without requir
 ## Date-Based Structure
 
 All sub-folders use `[YYYY]/[MM]/` structure when sorting files:
+
 - `02-Meetings/[YYYY]/[MM]/`
 - `03-Emails/[YYYY]/[MM]/`
 - `04-Documents/[YYYY]/[MM]/`
@@ -121,3 +134,143 @@ All sub-folders use `[YYYY]/[MM]/` structure when sorting files:
 - Do not add updates, corrections, or additional information to meeting notes unless explicitly asked
 - If information needs to be updated, update `01-General/todos.md` or other appropriate documentation files instead
 
+## Front Matter Requirements
+
+All markdown files (except templates) MUST include YAML front matter at the top of the file.
+
+### Type System
+
+Use one of these 8 types for the `type` field:
+
+| Type        | Description                                                  | Location                     |
+| ----------- | ------------------------------------------------------------ | ---------------------------- |
+| `meeting`   | Meeting notes, discussions, syncs, calls                     | `02-Meetings/`               |
+| `email`     | Email correspondence                                         | `03-Emails/`                 |
+| `document`  | Contracts, agreements, letters, statements                   | `04-Documents/`              |
+| `reference` | People profiles, employment info, static reference data      | `05-People/`, `09-Personal/` |
+| `project`   | Project documentation                                        | `06-Projects/`               |
+| `idea`      | Concepts, brainstorms                                        | `07-Ideas/`                  |
+| `tracker`   | Index/tracking documents (meeting trackers, topic summaries) | `01-General/`                |
+| `todo`      | Action item lists                                            | `01-General/`                |
+
+### Standard Metadata Fields
+
+```yaml
+---
+type: meeting|email|document|reference|project|idea|tracker|todo
+title: "Document Title"
+date: YYYY-MM-DD # Primary date (meeting date, email date, etc.)
+tags: [tag1, tag2] # Optional keywords/topics
+participants: [Person 1] # For meetings only
+source: Slack|Zoom|Email # Where content originated (optional)
+from: sender@email.com # For emails only
+to: recipient@email.com # For emails only
+---
+```
+
+### Front Matter by Type
+
+**Meeting notes (`type: meeting`):**
+
+```yaml
+---
+type: meeting
+title: "Meeting Title"
+date: YYYY-MM-DD
+participants: [Person 1, Person 2]
+source: Slack|Zoom|Teams|In-person
+tags: [topic1, topic2]
+---
+```
+
+**Emails (`type: email`):**
+
+```yaml
+---
+type: email
+title: "Email Subject"
+date: YYYY-MM-DD
+from: sender@email.com
+to: recipient@email.com
+tags: [topic1, topic2]
+---
+```
+
+**Documents (`type: document`):**
+
+```yaml
+---
+type: document
+title: "Document Title"
+date: YYYY-MM-DD
+tags: [topic1, topic2]
+---
+```
+
+**Reference materials (`type: reference`):**
+
+```yaml
+---
+type: reference
+title: "Reference Title"
+tags: [topic1, topic2]
+---
+```
+
+**Projects (`type: project`):**
+
+```yaml
+---
+type: project
+title: "Project Name"
+tags: [topic1, topic2]
+---
+```
+
+**Ideas (`type: idea`):**
+
+```yaml
+---
+type: idea
+title: "Idea Title"
+tags: [topic1, topic2]
+---
+```
+
+**Trackers (`type: tracker`):**
+
+```yaml
+---
+type: tracker
+title: "Tracker Title"
+tags: [topic1, topic2]
+---
+```
+
+**Todos (`type: todo`):**
+
+```yaml
+---
+type: todo
+title: "Todo List Title"
+tags: [topic1, topic2]
+---
+```
+
+### Front Matter Generation During Inbox Processing
+
+When processing files from `00-Inbox/`:
+
+1. **Auto-detect type** based on destination folder and content keywords
+2. **Extract metadata** from content:
+   - Date: from filename, content headers, or email headers
+   - Participants: from "Participants:", "Attendees:", or similar headers
+   - From/To: from email headers
+   - Source: from "Source:" header or content context
+3. **Generate tags** from content topics and keywords
+4. **Add front matter** before the first heading
+5. **Remove redundant metadata** from body if it's now in front matter (optional - keep for readability)
+
+### Template Files
+
+Template files in `*/templates/` folders should NOT have front matter added. They are excluded from front matter requirements.

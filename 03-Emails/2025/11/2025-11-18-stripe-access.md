@@ -1,3 +1,12 @@
+---
+type: email
+title: Stripe Access Request
+date: 2025-11-18
+from: scott.weaver@redis.com
+to: helpdesksupport@redis.com
+tags: [stripe, access-request, it]
+---
+
 # Stripe Access Request
 
 **Date:** November 18, 2025  

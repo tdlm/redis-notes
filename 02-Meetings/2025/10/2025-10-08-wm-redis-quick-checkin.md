@@ -1,3 +1,11 @@
+---
+type: meeting
+title: WM/Redis Quick Check-in
+date: 2025-10-08
+participants: [Kelsey Szukhent, Scott Adrian, Sam, Alannah, Mac McDonald, Bonny]
+tags: [woolly-mammoth, resource-center, sanity, deployments]
+---
+
 # WM/Redis Quick Check-in
 
 **Date:** Wednesday, October 8, 2025

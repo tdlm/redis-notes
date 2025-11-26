@@ -1,3 +1,11 @@
+---
+type: meeting
+title: "Redis for AI: Positioning & Messaging Training"
+date: 2025-11-21
+participants: [Jim Allen-Wallace, John Noonan, Talon Miller, Rini Vasan, Jim Tessier, Ian Poblete, Prasan Kumar, Chanh Tran, Allison Gregory, Cody Henshaw, Will Johnston]
+tags: [training, ai, marketing, messaging, positioning]
+---
+
 # [Training] Redis for AI: Positioning & messaging
 
 Fri, 21 Nov 25 · jim.allenwallace@redis.com, john.noonan@redis.com, talon.miller@redis.com, rini.vasan@redis.com, jim.tessier@redis.com, ian.poblete@redis.com, prasan.kumar@redis.com, chanh.tran@redis.com, allison.gregory@redis.com, cody.henshaw@redis.com, will.johnston@redis.com

@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Stripe Web Flow Design Sync
+date: 2025-10-03
+participants: [Adam Haskew, Kelsey Szukhent, Sallie Gamboa, Mac McDonald]
+tags: [stripe, design, checkout]
+---
+
 # Stripe Web Flow Design Sync
 
 **Date:** Friday, October 3, 2025

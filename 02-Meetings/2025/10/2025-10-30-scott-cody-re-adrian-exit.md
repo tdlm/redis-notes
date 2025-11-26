@@ -1,3 +1,11 @@
+---
+type: meeting
+title: "Scott and Cody: Re: Adrian Exit"
+date: 2025-10-30
+participants: [Scott Weaver, Cody Henshaw]
+tags: [1-on-1, team-changes, restructuring, ai-tools]
+---
+
 # Scott and Cody: Re: Adrian Exit
 
 **Date:** October 30, 2025  

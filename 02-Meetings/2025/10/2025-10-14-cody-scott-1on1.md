@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Scott / Cody 1-on-1
+date: 2025-10-14
+participants: [Scott Weaver, Cody Henshaw]
+tags: [1-on-1, migration, okrs, experimentation]
+---
+
 # Scott / Cody 1-on-1
 
 **Date:** October 14, 2025  

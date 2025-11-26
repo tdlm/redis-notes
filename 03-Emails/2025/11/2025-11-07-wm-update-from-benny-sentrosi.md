@@ -1,3 +1,13 @@
+---
+type: email
+title: Work Update from Bonny Sentrosi
+date: 2025-11-07
+from: bonny@mammoth.tech
+to: redis-team
+source: Slack
+tags: [woolly-mammoth, webinars, resource-center, update]
+---
+
 # Work Update from Bonny Sentrosi
 
 **From:** Bonny Sentrosi  

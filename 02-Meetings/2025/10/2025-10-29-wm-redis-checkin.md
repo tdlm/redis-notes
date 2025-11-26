@@ -1,3 +1,11 @@
+---
+type: meeting
+title: WM/Redis Quick Check-in
+date: 2025-10-29
+participants: [Kelsey Szukhent, Scott Adrian, Sam, Alannah, Mac McDonald, Cody Henshaw, Bonny, Scott Weaver]
+tags: [woolly-mammoth, resource-center, videos, webinars, dark-mode]
+---
+
 # WM/Redis Quick Check-in
 
 **Date:** October 29, 2025  

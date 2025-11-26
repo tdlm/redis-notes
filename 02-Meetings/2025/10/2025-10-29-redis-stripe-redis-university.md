@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Redis <> Stripe - Redis University
+date: 2025-10-29
+participants: [Yoav Haresh, Sallie Gamboa, Marie-Emmanuelle Flute, Chris Floyd, Fahad Ahmed, Organ Not, Scott Weaver]
+tags: [stripe, redis-university, billing, tax, invoicing]
+---
+
 # Redis <> Stripe - Redis University
 
 **Date:** October 29, 2025  

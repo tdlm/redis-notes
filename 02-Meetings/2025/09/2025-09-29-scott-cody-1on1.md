@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Scott / Cody 1-on-1
+date: 2025-09-29
+participants: [Scott Weaver, Cody Henshaw]
+tags: [1-on-1, hero-component, granola, ai]
+---
+
 # Scott / Cody 1-on-1
 
 **Date:** Monday, September 29, 2025

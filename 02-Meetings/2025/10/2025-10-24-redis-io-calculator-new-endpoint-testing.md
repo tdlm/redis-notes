@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Redis.io Calculator New Endpoint Testing
+date: 2025-10-24
+participants: [Scott Weaver, Yoav Haresh, Nir Chodorov]
+tags: [pricing-calculator, api, testing, migration]
+---
+
 # Redis.io Calculator New Endpoint Testing
 
 **Date:** October 24, 2025  

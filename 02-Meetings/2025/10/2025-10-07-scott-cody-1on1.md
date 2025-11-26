@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Scott / Cody 1-on-1
+date: 2025-10-07
+participants: [Scott Weaver, Cody Henshaw]
+tags: [1-on-1, migration, pricing-calculator, okrs]
+---
+
 # Scott / Cody 1-on-1
 
 **Date:** Tuesday, October 7, 2025

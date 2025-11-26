@@ -1,3 +1,10 @@
+---
+type: meeting
+title: Lancash Product Page Design Variations and Testing Strategy
+date: 2025-09-25
+tags: [langcache, design, a-b-testing, deepgram]
+---
+
 # Lancash Product Page Design Variations and Testing Strategy
 
 **Date:** Thursday, September 25, 2025

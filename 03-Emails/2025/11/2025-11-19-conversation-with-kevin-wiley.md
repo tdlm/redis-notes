@@ -1,3 +1,13 @@
+---
+type: email
+title: Conversation with Kevin Wiley
+date: 2025-11-19
+from: kevin.wiley@redis.com
+to: scott.weaver@redis.com
+source: Slack
+tags: [korean-homepage, hero, design, localization]
+---
+
 # Conversation with Kevin Wiley
 
 ## Kevin Wiley

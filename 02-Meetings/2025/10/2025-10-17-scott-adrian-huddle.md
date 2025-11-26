@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Scott / Adrian Huddle
+date: 2025-10-17
+participants: [Scott Weaver, Adrian]
+tags: [aws-reinvent, sanity, design, development]
+---
+
 # Scott / Adrian Huddle
 
 **Date:** October 17, 2025  

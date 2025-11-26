@@ -1,3 +1,11 @@
+---
+type: meeting
+title: "Seth and Scott: RC Plan as R Param on Try-Free Page"
+date: 2025-11-05
+participants: [Seth, Scott Weaver]
+tags: [sso, authentication, rc-plan, signup]
+---
+
 # Seth and Scott: Re: RC Plan as R Param on Try-Free Page
 
 **Date:** November 5, 2025  

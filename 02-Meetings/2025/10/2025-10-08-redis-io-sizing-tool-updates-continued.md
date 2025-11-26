@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Redis.io Sizing Tool Updates Continued
+date: 2025-10-08
+participants: [Yoav Haresh, Sowmya Narayanan, Mac McDonald, Cody Henshaw]
+tags: [pricing-calculator, redis-flex, ui-improvements]
+---
+
 # Redis.io Sizing Tool Updates Continued
 
 **Date:** Wednesday, October 8, 2025

@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Scott and Cody 1-on-1
+date: 2025-11-10
+participants: [Scott Weaver, Cody Henshaw]
+tags: [1-on-1, tutorials, stripe, pricing-calculator]
+---
+
 # Scott and Cody 1-on-1
 
 **Date:** November 10, 2025  

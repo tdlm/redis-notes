@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Dev Hub Requirements & Splash Setup
+date: 2025-10-23
+participants: [Scott Weaver, Ashwin Hariharan]
+tags: [dev-hub, github, sanity, repositories]
+---
+
 # Dev Hub Requirements & Splash Setup
 
 **Date:** October 23, 2025  

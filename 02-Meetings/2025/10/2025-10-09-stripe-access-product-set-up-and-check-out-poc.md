@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Stripe Access - Product Set Up and Check Out POC
+date: 2025-10-09
+participants: [Yoav Haresh, Sallie Gamboa, Nir Chodorov]
+tags: [stripe, billing, redis-university, checkout]
+---
+
 # Stripe Access - Product Set Up and Check Out POC
 
 **Date:** Thursday, October 9, 2025

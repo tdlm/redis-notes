@@ -1,3 +1,9 @@
+---
+type: todo
+title: Todos & Action Items
+tags: [action-items, tasks, work]
+---
+
 # Todos & Action Items
 
 ## Action Item Template

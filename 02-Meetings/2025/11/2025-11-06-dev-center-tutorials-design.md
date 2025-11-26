@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Dev Center Tutorials Design
+date: 2025-11-06
+participants: [Ashwin Hariharan, Sallie Gamboa, Mac McDonald, Will Johnston, Cody Henshaw, Kelsey Szukhent]
+tags: [dev-center, tutorials, github, sanity]
+---
+
 # Dev Center Tutorials Design
 
 **Date:** November 6, 2025  

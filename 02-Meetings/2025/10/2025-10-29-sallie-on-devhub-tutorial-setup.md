@@ -1,3 +1,11 @@
+---
+type: meeting
+title: Sallie on DevHub Tutorial Setup
+date: 2025-10-29
+participants: [Sallie Gamboa, Scott Weaver]
+tags: [dev-hub, tutorials, sanity]
+---
+
 # Sallie on DevHub Tutorial Setup
 
 **Date:** October 29, 2025  
