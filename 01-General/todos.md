@@ -28,6 +28,43 @@ Use the following format for all action items:
 
 ## Action Items from Past 5 Days
 
+### Fix Valkey Comparison Table Rendering on Wide Screens
+
+- **Status:** In progress
+
+- **Link:** https://redis.io/compare/valkey/
+
+- **Summary:**
+
+  Table on Redis vs Valkey comparison page doesn't render properly on super wide screens. Reproducible by zooming out.
+
+- **Notes:**
+
+  - From: Slack thread with Paul Bushell, Michal Mitringa, Mac McDonald (Dec 11, 2025)
+  - Vodafone contact reported the issue
+  - Can reproduce by zooming out in browser
+
+---
+
+### Fix Broken Anchor Links in Legal Agreements
+
+- **Status:** In progress
+
+- **Link:** https://redis.io/legal/cloud-tos/ and https://redis.io/legal/software-agreement/
+
+- **Summary:**
+
+  Inline anchor links within body copy of Cloud Agreement and Software Agreement aren't working (e.g., Section references like "Section 2.3", "Section 9"). Sidebar nav anchors work fine — issue is with links embedded in agreement text.
+
+- **Notes:**
+
+  - From: Slack thread with Francesca R. Colomer, Adam Haskew (Oct 21 - Dec 2, 2025)
+  - Legal team flagging as important for customer-facing online terms
+  - Some issues resolved previously, but Section reference links still broken
+  - Handed off from Scott Adrian → Adam → Scott Weaver (Dec 2)
+
+---
+
 ### Stripe Integration for Redis University Course Payments
 
 - **Status:** In progress
