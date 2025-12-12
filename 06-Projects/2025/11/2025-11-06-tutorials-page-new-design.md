@@ -122,3 +122,4 @@ Created this task.
 @Scott Weaver and @Mac McDonald checking in here.  
 How are things going with the tutorial design and implementing the changes we discussed?  
 Do you have questions or do we need to resync?
+
