@@ -225,10 +225,10 @@ Reference list of coworkers for spelling corrections and quick lookups when proc
 
 ## Growth / Analytics
 
-### Ian
+### Ian, Ian Poblete
 
 - **Name variations:** Ian
-- **Title:** Growth Lead
+- **Title:** Senior Strategy & Growth Marketing Analytics Manager
 - **Team:** Growth
 - **Notes:** Focus on conversion efficiency, tracking, A/B testing. Primary contact for GA and SM data integration.
 
