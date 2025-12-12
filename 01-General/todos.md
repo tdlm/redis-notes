@@ -28,6 +28,27 @@ Use the following format for all action items:
 
 ## Action Items from Past 5 Days
 
+### Standardize Mobile Cards for Database-Level Flex Slider
+
+- **Status:** In progress
+
+- **Link:**
+
+- **Summary:**
+
+  Refactor pricing calculator mobile cards to a standard layout so the RAM/flash percentage slider can be moved to each individual database card. Flex pricing is per database, not per Pro plan, so the toggle needs to be at the database level rather than the card level.
+
+- **Notes:**
+
+  - From: 2025-12-08 Scott/Cody 1-on-1
+  - Hard-coded pricing: $0.0049 and $0.0066 per GB/hour
+  - Urgent priority - was needed for re:Invent last week
+  - Slider range: 50-100% RAM in 10% intervals (50, 60, 70, 80, 90, 100%)
+  - Default at 100% RAM (current Pro pricing)
+  - Up to 80% cost savings for customers using mixed storage
+
+---
+
 ### Fix Valkey Comparison Table Rendering on Wide Screens
 
 - **Status:** In progress
