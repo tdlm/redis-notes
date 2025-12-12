@@ -5,13 +5,14 @@ date: 2025-12-09
 due: 2025-12-09
 tags: [website, web-team, landing-page, sanity]
 assignee: Scott Weaver
-status: to-do
+status: in-review
 ---
 
 # Website: Stage Edits
 
 **Assignee:** Scott Weaver  
 **Due date:** Dec 9  
+**Status:** In Review  
 **Projects:** Growth: Web Team Requests (Ready → To Do)
 
 **Dependencies:**
@@ -27,7 +28,7 @@ status: to-do
 | ------------------------------- | ------------ |
 | Tactic type                     | Website      |
 | Team responsible                | Web          |
-| Status                          | To Do        |
+| Status                          | In Review    |
 | Region                          | –            |
 | Website sub-type                | –            |
 | Priority level                  | –            |
