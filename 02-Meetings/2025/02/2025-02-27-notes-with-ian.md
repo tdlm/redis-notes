@@ -3,6 +3,7 @@ type: meeting
 title: "Notes with Ian"
 date: 2025-02-27
 participants: [Scott Weaver, Ian]
+source: Zoom
 tags: [cloud, analytics, conversion, tracking, a-b-testing]
 ---
 
