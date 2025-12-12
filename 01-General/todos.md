@@ -48,7 +48,7 @@ Use the following format for all action items:
 
 ### Fix Broken Anchor Links in Legal Agreements
 
-- **Status:** In progress
+- **Status:** Done
 
 - **Link:** https://redis.io/legal/cloud-tos/ and https://redis.io/legal/software-agreement/
 
@@ -62,6 +62,7 @@ Use the following format for all action items:
   - Legal team flagging as important for customer-facing online terms
   - Some issues resolved previously, but Section reference links still broken
   - Handed off from Scott Adrian → Adam → Scott Weaver (Dec 2)
+  - ✅ Completed: Dec 11, 2025
 
 ---
 
