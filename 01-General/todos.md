@@ -46,6 +46,9 @@ Use the following format for all action items:
   - Slider range: 50-100% RAM in 10% intervals (50, 60, 70, 80, 90, 100%)
   - Default at 100% RAM (current Pro pricing)
   - Up to 80% cost savings for customers using mixed storage
+  - **Update (Dec 11):** UI changes complete - Flex toggle + slider moved to database card level on preview environment. Calculations still need to be implemented (currently do nothing).
+  - **TODO (Dec 12 AM):** Talk to Mac - let him know changes are on preview environment for review
+  - **Remaining:** Implement actual pricing calculations using RAM/SSD rates
 
 ---
 
@@ -157,6 +160,7 @@ Use the following format for all action items:
   - From: 2025-10-07 Scott/Cody 1-on-1
   - From: 2025-10-14 Web Team Weekly - Migration work paused, resuming
   - From: 2025-11-18 Scott/Cody 1-on-1 - Significant progress, mostly functional
+  - **⭐ TOP PRIORITY for Dec 12**
   - **Completed:**
     - Search functionality (currently title-only, plans for TanStack Query)
     - Category system working (AI category auto-tags content)
