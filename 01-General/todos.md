@@ -51,7 +51,7 @@ Use the following format for all action items:
 
 ### Fix Valkey Comparison Table Rendering on Wide Screens
 
-- **Status:** In progress
+- **Status:** Done
 
 - **Link:** https://redis.io/compare/valkey/
 
@@ -64,6 +64,7 @@ Use the following format for all action items:
   - From: Slack thread with Paul Bushell, Michal Mitringa, Mac McDonald (Dec 11, 2025)
   - Vodafone contact reported the issue
   - Can reproduce by zooming out in browser
+  - ✅ Completed: Dec 11, 2025
 
 ---
 
