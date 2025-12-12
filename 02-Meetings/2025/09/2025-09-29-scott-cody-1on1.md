@@ -3,7 +3,16 @@ type: meeting
 title: Scott / Cody 1-on-1
 date: 2025-09-29
 participants: [Scott Weaver, Cody Henshaw]
-tags: [1-on-1, hero-component, granola, ai]
+tags:
+  [
+    1-on-1,
+    hero-component,
+    granola,
+    ai,
+    a-b-testing,
+    pricing-calculator,
+    media-assets,
+  ]
 ---
 
 # Scott / Cody 1-on-1
@@ -11,7 +20,15 @@ tags: [1-on-1, hero-component, granola, ai]
 **Date:** Monday, September 29, 2025
 
 **Participants:**
+
 - cody.henshaw@redis.com
+
+## Agenda
+
+- A/B testing
+  - Hero code section
+- QPF / pricing calc
+- Media Asset URLs
 
 ## Hero Component Development
 
@@ -41,11 +58,13 @@ tags: [1-on-1, hero-component, granola, ai]
 - Key insight: best cancer outcomes correlate with having good advocates
 
 - **Technical approach:**
+
   - Real-time transcription via WebSocket
   - Semantic caching for efficiency
   - Post-visit AI chatbot for follow-up questions
 
 - **Adoption challenges:**
+
   - Patient discomfort asking to record
   - Doctor resistance to recording
   - HIPAA compliance requirements
@@ -60,4 +79,3 @@ tags: [1-on-1, hero-component, granola, ai]
 - OpenAI Whisper requires sentence detection workarounds
 - System avoids medical advice, refers back to doctors
 - Integration with existing patient portals being explored
-
