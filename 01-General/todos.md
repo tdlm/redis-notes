@@ -197,7 +197,7 @@ Use the following format for all action items:
 
 ### Try Obsidian for Enhanced Note-Taking Workflow
 
-- **Status:** In progress
+- **Status:** Done
 
 - **Link:**
 
@@ -209,6 +209,7 @@ Use the following format for all action items:
 
   - From: 2025-11-18 Scott/Cody 1-on-1
   - Tool recommendation for enhanced note-taking workflow
+  - ✅ Tried Obsidian - not using it yet
 
 ---
 
