@@ -47,7 +47,8 @@ Use the following format for all action items:
   - Default at 100% RAM (current Pro pricing)
   - Up to 80% cost savings for customers using mixed storage
   - **Update (Dec 11):** UI changes complete - Flex toggle + slider moved to database card level on preview environment. Calculations still need to be implemented (currently do nothing).
-  - **TODO (Dec 12 AM):** Talk to Mac - let him know changes are on preview environment for review
+  - ~~**TODO (Dec 12 AM):** Talk to Mac - let him know changes are on preview environment for review~~ ✅ Done
+  - **Update (Dec 12):** Mac reviewed PoC at 2:17 PM - gave thumbs up, said "looks good/functions well." Has design notes but PoC approved.
   - **Remaining:** Implement actual pricing calculations using RAM/SSD rates
 
 ---
@@ -321,6 +322,25 @@ Use the following format for all action items:
 ---
 
 ## Waiting On Others
+
+### JAWs: Sign-off on LangCache Calculator Changes (Website: Stage Edits)
+
+- **Status:** Waiting
+
+- **Link:** https://redis-sanity-git-fix-langcache-calculator-redis-marketing.vercel.app/calculator/langcache/
+
+- **Summary:**
+
+  Need Jim Allen Wallace (JAWs) to confirm the LangCache calculator changes look correct so we can deploy to production. Kevin Wiley confirmed the changes are what they're after.
+
+- **Notes:**
+
+  - From: Slack conversation Dec 12, 2025
+  - Kevin Wiley confirmed at 1:20 PM that this is what they need
+  - Pinged JAWs at 1:53 PM waiting for sign-off
+  - Once approved, can deploy to production
+
+---
 
 ### Product Team: Finalize Flex Pricing Calculator Requirements
 
